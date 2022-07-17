@@ -1,3 +1,6 @@
+# texi-ui
+一套基于vue3和vite开的ui组件库
+
 ### 快速使用
 ```
 npm install  texi-ui --save
