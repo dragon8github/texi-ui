@@ -1,6 +1,6 @@
 <template>
   <t-button type='primary' @click="visible=true">按钮</t-button>
-  <tDialog title='温馨提示' v-model:visible='visible'>
+  <tDialog title='温馨提示' v-model='visible'>
     <p>77777777</p>
     <template v-slot:footer>
       <t-button @click="visible=false">取消</t-button>

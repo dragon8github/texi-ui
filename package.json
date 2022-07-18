@@ -1,13 +1,13 @@
 {
-  "name": "mytest-ui",
+  "name": "texi-ui",
   "private": false,
   "version": "0.0.1",
-  "main": "./dist/mytest-ui.umd.js",
-  "module": "./dist/mytest-ui.es.js",
+  "main": "./dist/texi-ui.umd.js",
+  "module": "./dist/texi-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/mytest-ui.es.js",
-      "require": "./dist/mytest-ui.umd.js"
+      "import": "./dist/texi-ui.es.js",
+      "require": "./dist/texi-ui.umd.js"
     }
   },
   "files": [

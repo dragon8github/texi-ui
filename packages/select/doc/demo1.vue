@@ -4,7 +4,7 @@
 
 <script setup>
 import { reactive, ref } from "vue";
-const selVal=ref('aodaliya')
+const selVal=ref('zhongguo')
 const state=reactive({
   selOptions:[
     { label: "中国", value: "zhongguo" },

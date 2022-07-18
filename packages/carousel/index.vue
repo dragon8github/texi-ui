@@ -2,7 +2,9 @@
   <div class="t-carousel" :class="{'fShowBtn':fShowBtn}" :style="{'width':width,'height':height}" @mouseenter="mEnterStopAnLeaveStar?stop():''" @mouseleave="mEnterStopAnLeaveStar?star():''">
     <ul class="t-carousel-body">
       <li class="t-carousel-item" v-for="(item,index) in sliders" :key="index" :class="{fade:currIndex===index}">
-        <img :src="item[filedValue]" alt="">
+        <slot>
+          <img :src="item[filedValue]" alt="">
+        </slot>
       </li>
     </ul>
     <!-- 上下页 -->

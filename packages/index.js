@@ -36,5 +36,5 @@ const install=app=>{
 const TUI={
     install
 }
-export {tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tDrawer,formAndFormItem,tTable}
+export {tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tDrawer,formAndFormItem,tTable,Message,Confirm}
 export default TUI

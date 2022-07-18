@@ -3,12 +3,12 @@
     <input type="file" class="file-input" ref="inRef" @change="inpChange" :multiple='multiple'>
     <tButton v-if="uploadTy=='default'" @click="fileChange" :type='btnType'>{{label}}</tButton>
     <div v-if="uploadTy=='drop'" ref="areaRef" class="area-box" :class="{activeArea:isActive}"><span>拖拽上传</span></div>
-    <div class="fileList-box">
+    <!-- <div class="fileList-box">
       <li v-for="(item,index) in fileList" :key="index">
         <span>{{item.name}}</span>
         <span class="delete-span" @click="deleteFile(index)">删除</span>
       </li>
-    </div>
+    </div> -->
   </div>
 </template>
 

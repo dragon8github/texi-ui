@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { getCurrentInstance, provide } from 'vue'
+import { getCurrentInstance, provide, defineProps } from 'vue'
 export default {
   name:'tForm', 
 }

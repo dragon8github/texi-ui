@@ -31,10 +31,9 @@ const props=defineProps({
 </script>
 <style lang="scss" scoped>
   .t-skeleton{
-    display: inline-block;
+    display: block;
     overflow: hidden;
     position: relative;
-    vertical-align: middle;
     .block{
       width: 100%;
       height: 100%;

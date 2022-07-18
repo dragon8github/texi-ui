@@ -1,6 +1,6 @@
 <template>
   <t-button type='primary' @click="visible=true">按钮</t-button>
-  <tDialog v-model:visible='visible'>
+  <tDialog v-model='visible'>
     <template v-slot:title>
       <h2>html类型标题</h2>
     </template>

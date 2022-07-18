@@ -1,7 +1,7 @@
 <template>
   <!-- 遮罩 -->
   <transition name='dialog-fade'>
-    <div class="t-dialog-wrapper" v-show="visible" @click.self="handleClose">
+    <div class="t-dialog-wrapper" v-show="modelValue" @click.self="handleClose">
       <div class="t-dialog" :style="{width,marginTop:top}">
         <div class="t-dialog-header">
           <slot name='title'>
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 <script setup>
-const emit=defineEmits(['update:visible'])
+const emit=defineEmits(['update:modelValue'])
 const props=defineProps({
   title:{
     type:String,
@@ -42,13 +42,13 @@ const props=defineProps({
     type:String,
     default:'15vh'
   },
-  visible:{
+  modelValue:{
     type:Boolean,
     default:false
   }
 })
 const handleClose=()=>{
-  emit('update:visible',false)
+  emit('update:modelValue',false)
 }
 </script>
 <style lang="scss" scoped>

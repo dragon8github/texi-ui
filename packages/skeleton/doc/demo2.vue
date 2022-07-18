@@ -1,8 +1,8 @@
 <template>
 <tSpace>
     <tSkeleton width="800px" height="40px"></tSkeleton>
-    <tSkeleton width="700px" height="30px"></tSkeleton>
-    <tSkeleton width="600px" height="20px"></tSkeleton>
+    <tSkeleton width="200px" height="30px"></tSkeleton>
+    <tSkeleton width="200px" height="20px"></tSkeleton>
 </tSpace>
 </template>
 

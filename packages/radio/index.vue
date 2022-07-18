@@ -8,13 +8,12 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
-import { computed } from '@vue/runtime-core'
 export default {
   name:'tRadio'
 }
 </script>
 <script setup>
+import { ref, computed, defineProps, defineEmits } from 'vue'
 const props=defineProps({
   options:{
     type:Array,
@@ -43,7 +42,7 @@ const change=(item,index)=>{
   if(!item.disabled){
     currIndex.value=index
   }else{
-    currIndex.value=-1
+    return
   }
   emit('change',item)
 }

@@ -15,6 +15,7 @@ const state=reactive({
             {field:'def',title:'默认值',align:'center'}
         ],
         datas:[
+            {attr:'v-model',type:'Boolean',talk:'是否显示弹窗',sel:'true/false',def:'false'},
             {attr:'title',type:'String',talk:'提示内容信息',sel:'——',def:'提示'},
             {attr:'width',type:'String',talk:'弹窗宽度',sel:'——',def:'30%'},
             {attr:'top',type:'String',talk:'距离顶部距离',sel:'——',def:'15vh'},

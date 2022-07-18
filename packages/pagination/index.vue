@@ -138,6 +138,12 @@ const change=(item)=>{
     span{
       margin-right: 10px;
     }
+    .showPaSize{
+      background-color: transparent;
+      height: 33px;
+      
+
+    }
   }
 </style>
 
