@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <script setup>
-import { nextTick, onMounted, reactive, ref } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 const props=defineProps({
   multiple:Boolean,
   label:{

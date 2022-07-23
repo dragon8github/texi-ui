@@ -1,5 +1,5 @@
 <template>
-  <!-- 装载是内容 -->
+  <!-- 装载内容 -->
   <div class="t-tabs-panel" v-show="activeName===name">
     <slot />
   </div>

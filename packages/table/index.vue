@@ -4,7 +4,7 @@
       <thead v-if="showHeader">
         <tr>
           <th v-for="(x,n) in options.fileds" :key="n" :style="[headStyle,{'text-align':x.align}]">
-            <slot :name="`head-`+x.field" :scope='x' v-if="$slot['head-'+x.field]"></slot>
+            <slot :name="'head-'+x.field" :scope='x' v-if="$slot['head-'+x.field]"></slot>
             <div v-else>{{x.title}}</div>
           </th>
         </tr>

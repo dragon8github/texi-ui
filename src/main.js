@@ -7,7 +7,7 @@ import router from './router/index'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/color-brewer.css'
 
-import '../styles/icons/icon.scss'
+import './assets/icons/icon.scss'
 
 
 const app=createApp(App);

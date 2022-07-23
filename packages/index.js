@@ -19,10 +19,11 @@ import breadAndBreadItem from './bread/index.js'
 import tSkeleton from './skeleton/index.js'
 import tBackTop from './backtop/index.js'
 import tDrawer from './drawer/index.js'
+// import formAndFormItem from './form/index.js'
 import formAndFormItem from './form/index.js'
+const {tForm,tFormItem}=formAndFormItem
 import tTable from './table/index.js'
-
-const components=[tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tDrawer,formAndFormItem,tTable]
+const components=[tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tForm,tFormItem,tDrawer,tTable]
 
 const install=app=>{
     components.forEach(item=>{
@@ -36,5 +37,5 @@ const install=app=>{
 const TUI={
     install
 }
-export {tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tDrawer,formAndFormItem,tTable,Message,Confirm}
+export {tButton,tInput,tTextarea,tSpace,tSelect,tRadio,tTree,tUpload,tDialog,tSwitch,tCheckbox,tCarousel,tPagination,tabAndTabpanel,breadAndBreadItem,tSkeleton,tBackTop,tForm,tFormItem,tDrawer,tTable,Message,Confirm}
 export default TUI

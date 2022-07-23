@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { computed, inject, defineProps } from 'vue'
+import { computed, inject } from 'vue'
 export default {
   name:'tFormItem'
 }

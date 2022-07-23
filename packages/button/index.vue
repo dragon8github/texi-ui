@@ -1,5 +1,5 @@
 <template>
-  <button :class="tClass" :disabled='disabled' :round='round' :plain='plain' :size='size' :style='styles' @click="click">
+  <button :class="tClass" :style='styles' @click="click">
     <i v-if="icon" :class="icon"></i>
     <span v-if="$slots.default"><slot></slot></span>
   </button>
@@ -50,6 +50,7 @@ const emit=defineEmits(['click'])
 const click=(e)=>{
   emit('click',e)
 }
+//:disabled='disabled' :round='round' :plain='plain' :size='size'
 const tClass=computed(()=>{
   return ['t-button',
   `t-button-${props.type}`,

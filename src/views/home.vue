@@ -43,7 +43,16 @@ export default {
     overflow-y: auto;
     border-right: 1px solid #d5d4d4;
     &::-webkit-scrollbar {
-        display: none;
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 4px;
+      background: #b8b8bb;
+    }
+    &::-webkit-scrollbar-track{
+      border-radius: 0px;
+      background: #fff;
     }
     li{
       list-style: none;
@@ -57,6 +66,29 @@ export default {
       color: #0e80eb;
       background: rgba(14,128,235,.1);
     }
+  }
+  main {
+    width: calc(100% - 317px);
+    flex: 1;
+    height: 100%;
+    padding: 0 calc(2vw + 100px) 0 2vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+  }
+  main::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #b8b8bb;
+  }
+
+  main::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: #fff;
   }
   .tuirightview{
     flex: 1;

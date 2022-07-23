@@ -53,6 +53,8 @@ export default {
     return[
       't-input',props.disabled?'t-input-disabled':'',
       props.leftIcon!=''?'t-input-left-icon':!props.clearable?props.rightIcon!=""?'t-input-right-icon':'':'',
+      props.showPassword?(props.leftIcon==''&&props.rightIcon==""&&!props.clearable)?'t-input-right-icon':'':'',
+      props.clearable?(props.leftIcon==''&&props.rightIcon==""&&!props.showPassword)?'t-input-right-icon':'':''
       ]
   })
   const clearStyle=computed(()=>{
@@ -89,7 +91,7 @@ export default {
     border: 1px solid $boder;
     // line-height: 1;
     padding: 10px 8px;
-    width: 100%;
+    min-width: 250px;
     font-size: 14px;
     color: $color;
     border-radius: 4px;
@@ -100,8 +102,8 @@ export default {
   }
   .clear-icon{
     position: absolute;
-    right: 0px;
-    top: 8px;
+    right: 6px;
+    top: 9px;
     cursor: pointer;
   }
   .left-icon{
@@ -112,7 +114,7 @@ export default {
   }
   .right-icon{
     position: absolute;
-    right:-6px;
+    right:-33px;
     top:11px;
     color:#c6c8cc;
   }
@@ -124,12 +126,13 @@ export default {
 }
 .t-input-left-icon{
   input{
-    padding: 10px 30px;
+    padding: 10px 10px 10px 30px;
   }
 }
 .t-input-right-icon{
   input{
-    padding: 10px 8px;
+    padding: 10px 30px 10px 10px;
   }
 }
+
 </style>
