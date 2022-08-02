@@ -1,6 +1,6 @@
 <template>
   <div class="t-form-item" :style="{'margin':isInline}">
-    <label class="t-form-item-label" :style="{'width':Form.props.labelWidth,'text-align':Form.props.labelTextAlign}">{{label}}</label>
+    <label class="t-form-item-label" :style="{'width':Form.labelWidth,'text-align':Form.labelTextAlign}">{{label}}</label>
     <div class="t-form-item-content">
       <slot></slot>
     </div>
@@ -22,7 +22,7 @@ export default {
   })
   const Form=inject('Form')
   const isInline=computed(()=>{
-    if(Form.props.inline){
+    if(Form&&Form.inline){
       return '0 10px'
     }else{
       return '0 0 25px 0'
